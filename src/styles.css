@@ -1,0 +1,124 @@
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: 'Poppins', sans-serif;
+
+  /* COLORS */
+  --color: #32df1b;
+  --bg-color: #f4f4f4;
+  --title: #b323ec;
+}
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.card{
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    margin: 0 2em;
+  }
+  
+  .swiper-slide:not(.swiper-slide-active){
+    filter: blur(0px);
+  }
+  .swiper-slide-active:not(.swiper-slide){
+    filter: blur(0px);
+  }
+  
+  .card__image{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    padding: 3px;
+    margin-bottom: 2em;
+  }
+  
+  .card__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    margin-bottom: 5px;
+  }
+  
+  .card__name{
+    color: var(--title);
+  }
+  
+  .card__text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+  }
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+}
+
+.card__name{
+  color: var(--title);
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
